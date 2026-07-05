@@ -1,3 +1,5 @@
+Thời gian (Time Complexity): $O(n)$ với $n$ là độ dài của chuỗi s. Chúng ta chỉ duyệt qua chuỗi đúng 1 lần duy nhất nhờ việc tra cứu bảng băm mất tốn thời gian $O(1)$.
+
 <h2><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters">3. Longest Substring Without Repeating Characters</a></h2><h3>Medium</h3><hr><p>Given a string <code>s</code>, find the length of the <strong>longest</strong> <span data-keyword="substring-nonempty"><strong>substring</strong></span> without duplicate characters.</p>
 
 <p>&nbsp;</p>
@@ -33,3 +35,5 @@ Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence an
 	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
 	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
 </ul>
+
+
