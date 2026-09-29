@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1148-article-views-i](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1148-article-views-i) |
 | [1179-reformat-department-table](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1179-reformat-department-table) |
 | [1251-average-selling-price](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1251-average-selling-price) |
+| [1280-students-and-examinations](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1280-students-and-examinations) |
 | [1327-list-the-products-ordered-in-a-period](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1327-list-the-products-ordered-in-a-period) |
 | [1407-top-travellers](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1407-top-travellers) |
 ## String
