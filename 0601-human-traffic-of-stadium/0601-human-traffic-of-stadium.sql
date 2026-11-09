@@ -1,23 +1,28 @@
-SELECT DISTINCT s1.id, s1.visit_date, s1.people
-FROM Stadium s1
-JOIN Stadium s2 ON s2.id = s1.id + 1 AND s2.people >= 100
-JOIN Stadium s3 ON s3.id = s1.id + 2 AND s3.people >= 100
-WHERE s1.people >= 100
-
-UNION
-
-SELECT DISTINCT s2.id, s2.visit_date, s2.people
-FROM Stadium s1
-JOIN Stadium s2 ON s2.id = s1.id + 1 AND s2.people >= 100
-JOIN Stadium s3 ON s3.id = s1.id + 2 AND s3.people >= 100
-WHERE s1.people >= 100
-
-UNION
-
-SELECT DISTINCT s3.id, s3.visit_date, s3.people
-FROM Stadium s1
-JOIN Stadium s2 ON s2.id = s1.id + 1 AND s2.people >= 100
-JOIN Stadium s3 ON s3.id = s1.id + 2 AND s3.people >= 100
-WHERE s1.people >= 100
-
+WITH FilteredStadium AS (
+    SELECT id, visit_date, people
+    FROM Stadium
+    WHERE people >= 100
+),
+NumberedStadium AS (
+    SELECT 
+        id, 
+        visit_date, 
+        people,
+        id - ROW_NUMBER() OVER (ORDER BY id) AS grp
+    FROM FilteredStadium
+),
+CountedStadium AS (
+    SELECT 
+        id, 
+        visit_date, 
+        people,
+        COUNT(*) OVER (PARTITION BY grp) AS cnt
+    FROM NumberedStadium
+)
+SELECT 
+    id, 
+    visit_date, 
+    people
+FROM CountedStadium
+WHERE cnt >= 3
 ORDER BY visit_date ASC;
