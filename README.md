@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1667-fix-names-in-a-table](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1667-fix-names-in-a-table) |
 | [1683-invalid-tweets](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1683-invalid-tweets) |
 | [1729-find-followers-count](https://github.com/Caovannho/LeetCode-Solutions/tree/master/1729-find-followers-count) |
+| [3436-find-valid-emails](https://github.com/Caovannho/LeetCode-Solutions/tree/master/3436-find-valid-emails) |
 | [3451-find-invalid-ip-addresses](https://github.com/Caovannho/LeetCode-Solutions/tree/master/3451-find-invalid-ip-addresses) |
 ## String
 |  |
